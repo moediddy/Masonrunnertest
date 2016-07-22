@@ -8,6 +8,7 @@
   tasks:
     - name: Create / Verify a Server Group at CenturyLink Cloud
       clc_group:
+        location: 'WA1'
         name: 'Mason Runner Test'
         parent: 'Default Group'
         state: present

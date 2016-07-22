@@ -1,0 +1,17 @@
+# Create a Server Group
+
+---
+- name: Create Server Group
+  hosts: localhost
+  gather_facts: False
+  connection: local
+  tasks:
+    - name: Create / Verify a Server Group at CenturyLink Cloud
+      clc_group:
+        name: 'Mason Runner Test'
+        parent: 'Default Group'
+        state: present
+      register: clc
+
+    - name: debug
+      debug: var=clc

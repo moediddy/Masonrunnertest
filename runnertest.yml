@@ -9,7 +9,7 @@
     - name: Create / Verify a Server Group at CenturyLink Cloud
       clc_group:
         location: 'WA1'
-        name: 'Mason Runner Test'
+        name: 'Happy Monday'
         parent: 'Default Group'
         state: present
       register: clc
